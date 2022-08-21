@@ -1,0 +1,17 @@
+#----0++++5------8+++++++11-------
+
+inputUser = float(input("masukkan angka \nantara 0 sampai 5 \natau \nangka 8 sampai 11:\n"))
+
+#----0++++5
+#memeriksa angka antara 0 sampai 5
+isAntara = (inputUser >0 and inputUser <5)
+print ("Antara 0 smpai 5 =", isAntara)
+
+#8++++11------
+#memeriksa angka antara 8 sampai 11
+isAntara = (inputUser >8 and inputUser <11)
+print ("Antara 8 smpai 11 =", isAntara)
+
+#----0++++5------8+++++++11-------
+isCorrect = isAntara or isAntara
+print("angka yg dimasukkan:", isCorrect)
